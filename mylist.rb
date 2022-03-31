@@ -17,14 +17,22 @@ class MyList
 end
 
 list = MyList.new(1, 2, 3, 4)
+#=> #<MyList: @list=[1, 2, 3, 4]>
 
-puts list.all? { |e| e < 5 }
-
-puts list.all? { |e| e > 5 }
+# Test #all?
+list.all? {|e| e < 5}
+#=> true
+list.all? {|e| e > 5}
+#=> false
 
 # Test #any?
-puts list.any? { |e| e == 2 }
+list.any? {|e| e == 2}
+#=> true
+list.any? {|e| e == 5}
+#=> false
 
-puts list.any? { |e| e == 5 }
+# Test #filter
+list.filter {|e| e.even?}
+#=> [2, 4]
 
-puts list.filter { |e| e.even? }
+

@@ -1,6 +1,7 @@
 # Enumerable Ruby
 
-> Implemented in this repository a morse code dictionary, and a function to encode and decode messages collected from the terminal
+> Implemented in this repository is a module inside a class, and a enumerable. The module enumerable will implement a subset of the functionality of Enumerable.
+
 
 ## Built With
 
@@ -10,8 +11,9 @@
 To get a local copy up and running follow these simple steps.
 
 ```bash
-$ git@github.com:clintonjosephs/morse-decoder.git
-$ cd morse-decoder
+$ git@github.com:clintonjosephs/enumerable-ruby.git
+$ cd enumerable-ruby
+
 ```
 
 # Installation
